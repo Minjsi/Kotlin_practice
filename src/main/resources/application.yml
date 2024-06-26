@@ -1,0 +1,15 @@
+
+# R2BDC
+spring:
+  r2dbc:
+      url : r2dbc:pool:mysql://localhost:3306/severance_pay?sslMode=DISABLED&serverZoneId=Asia/Seoul
+      username : root
+      password : 1234
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        r2dbc: DEBUG # R2DBC 관련 로그 레벨 설정
+        security: DEBUG
